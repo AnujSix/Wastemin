@@ -1,0 +1,25 @@
+.home {
+    padding: 10px 5px;
+    font-size: 16px;
+    color: white;
+    background-color: #0424c3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 50px
+    ;
+    margin-left: 10px;
+   
+}
+.home:hover {
+    background-color: #031746;
+    
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+body{
+    background-image: url(pexels-padrinan-255379.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}

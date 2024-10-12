@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Image</title>
+    <link rel="stylesheet" href="uploaded.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div id="imagePreview" class="preview"></div>
+        <button onclick="window.history.back()" class="home">Home</button>
+    </div>
+    <script>
+        const imageData = sessionStorage.getItem('uploadedImage');
+        const imagePreview = document.getElementById('imagePreview');
+
+        if (imageData) {
+            imagePreview.innerHTML = `<img src="${imageData}" alt="Uploaded Image">`;
+        } else {
+            imagePreview.innerHTML = '<p>No image uploaded.</p>';
+        }
+    </script>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image Gallery</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+    
+            h1 {
+                text-align: center;
+                margin: 20px 0;
+            }
+    
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 10px;
+                padding: 10px;
+            }
+    
+            .gallery img {
+                width: 100%;
+                border-radius: 10px;
+                object-fit: cover; /* Ensures images cover the entire box */
+                transition: transform 0.3s;
+            }
+    
+            .gallery img:hover {
+                transform: scale(1.05); /* Slightly zoom on hover */
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Waste area posts</h1>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/300" alt="Image 1">
+            <img src="https://via.placeholder.com/301" alt="Image 2">
+            <img src="https://via.placeholder.com/302" alt="Image 3">
+            <img src="https://via.placeholder.com/303" alt="Image 4">
+            <img src="https://via.placeholder.com/304" alt="Image 5">
+            <img src="https://via.placeholder.com/305" alt="Image 6">
+            <img src="https://via.placeholder.com/306" alt="Image 7">
+            <img src="https://via.placeholder.com/307" alt="Image 8">
+            <img src="https://via.placeholder.com/308" alt="Image 9">
+        </div>
+    </body>
+    </html>
+    
+</body>
+</html>

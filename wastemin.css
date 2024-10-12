@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #6150ba;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(270deg, #090253, #8c94f1);
+    background-size: ; /* Makes the gradient larger */
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+    
+
+    
+}
+
+
+
+header .logo {
+    display: flex;
+    height: 60px;
+ 
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+
+.h {
+    margin: 0 15px;
+    position: relative;
+    cursor: pointer;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+.h img{
+    width: 30px;
+    
+    
+}
+.h::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px; /* Adjust for spacing */
+    height: 2px;
+    background: rgb(13, 75, 233);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+    
+}
+
+.h:hover::after {
+    transform: scaleX(1);
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+.actcrt {
+    padding: 10px 5px;
+    font-size: 16px;
+    color: white;
+    background-color: #0424c3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 50px
+    ;
+   
+}
+.actcrt:hover {
+    background-color: #031746;
+    
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+main .feature-cont{
+    padding: 20px;
+    
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-end; 
+    height: 100vh;
+    position: relative;
+    
+    
+}
+main{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end; 
+    height: 100vh;
+    position: relative;
+    
+}
+.text-overlay {
+    color: white; /* Text color */
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    border-radius: 10px; /* Rounded corners */
+}
+
+h1 {
+    font-size: 3em; /* Large heading */
+    margin: 0; /* Remove default margin */
+}
+
+p {
+    font-size: 1.5em; /* Smaller paragraph */
+    margin-top: 10px; /* Space between heading and paragraph */
+}
+
+
+
+.feature-cont{
+    display: flex;
+    gap: 10px; /* Space between logos */
+    padding: 20px; /* Padding from the bottom and right */
+    position: relative;
+}
+.feature{
+    width: 60px; /* Set the width of the logos */
+    height: 60px; /* Set the height of the logos */
+    border-radius: 50%; /* Make the images circular */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+    cursor: pointer;
+}
+.feature:hover{
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #050505;
+    color: rgb(255, 255, 255);
+    font-size:smaller
+    
+    
+}
